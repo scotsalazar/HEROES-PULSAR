@@ -2,13 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>HEROESPULSAR</title>
+  <title>HEROESPULSAR-SCOT</title>
   <base href="/">
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBLjXfCdeKVr9R0RUduvlqjLgu9ktcl4nY",
+      authDomain: "heroes-pulsar.firebaseapp.com",
+      databaseURL: "https://heroes-pulsar.firebaseio.com",
+      projectId: "heroes-pulsar",
+      storageBucket: "heroes-pulsar.appspot.com",
+      messagingSenderId: "202794796146"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-messaging.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-functions.js"></script>
+
+
+  <!-- <script>
+  const firebase = require("firebase");
+  // Required for side-effects
+  require("firebase/firestore");
+
+  firebase.initializeApp({
+      apiKey: 'AIzaSyBLjXfCdeKVr9R0RUduvlqjLgu9ktcl4nY',
+      authDomain: 'heroes-pulsar.firebaseapp.com',
+      projectId: 'heroes-pulsar'
+    });
+
+    // Initialize Cloud Firestore through Firebase
+    var db = firebase.firestore();
+
+    // Test
+    db.collection("heroes").add({
+      id: 4,
+      name: "Lovelace"
+    })
+    .then(function(docRef) {
+      console.log("Document written with ID: ", docRef.id);
+    })
+    .catch(function(error) {
+      console.error("Error adding document: ", error);
+    });
+
+
+</script> -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
-  <app-root></app-root>
+  <app-root>
+  <script>
+    
+
+  </script>
+
+  </app-root>
 </body>
 </html>

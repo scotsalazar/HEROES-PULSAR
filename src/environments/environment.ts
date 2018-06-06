@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: true,
+  firebase: {
+    apiKey: "AIzaSyBLjXfCdeKVr9R0RUduvlqjLgu9ktcl4nY",
+    authDomain: "heroes-pulsar.firebaseapp.com",
+    databaseURL: "https://heroes-pulsar.firebaseio.com",
+    projectId: "heroes-pulsar",
+    storageBucket: "heroes-pulsar.appspot.com",
+    messagingSenderId: "202794796146"
+  }
 };
 
 /*
@@ -13,3 +21,17 @@ export const environment = {
  * because it will have performance impact when throw error
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+// <script>
+//     // Initialize Firebase
+//     var config = {
+//       apiKey: "AIzaSyBLjXfCdeKVr9R0RUduvlqjLgu9ktcl4nY",
+//       authDomain: "heroes-pulsar.firebaseapp.com",
+//       databaseURL: "https://heroes-pulsar.firebaseio.com",
+//       projectId: "heroes-pulsar",
+//       storageBucket: "heroes-pulsar.appspot.com",
+//       messagingSenderId: "202794796146"
+//     };
+//     firebase.initializeApp(config);
+//   </script>
